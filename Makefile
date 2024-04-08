@@ -4,7 +4,9 @@ CFLAGS = -Wall -Wextra -Werror -I.
 SRC = 	pipex.c \
 		fork_pid.c \
 		pid_checks.c \
-		helpers.c
+		helpers.c \
+		outils.c \
+		utils.c
 
 OBJS = $(SRC:.c=.o)
 
