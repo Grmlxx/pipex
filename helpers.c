@@ -6,7 +6,7 @@
 /*   By: alamaoui <alamaoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/04 03:11:41 by alamaoui          #+#    #+#             */
-/*   Updated: 2024/04/08 01:17:02 by alamaoui         ###   ########.fr       */
+/*   Updated: 2024/04/14 22:55:47 by alamaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,9 +88,7 @@ char	*get_cmd_with_path(char *cmd, t_data *data)
 	if (!cmd)
 		return (NULL);
 	if (access(cmd, X_OK) == 0)
-	{
 		return (ft_strdup(cmd));
-	}
 	if (cmd[0] == '/')
 		return (NULL);
 	data->i = 0;
